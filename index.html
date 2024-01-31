@@ -116,7 +116,7 @@
         </p>
     </div>
 
-
+    <a href="#Home"> <button id="scrollToTopBtn">&#8963;</button></a>
     <div id="Achieve">
         <a href="#Achieve" class=" Achieve-link ">
             <h2>Achievements</h2>
@@ -236,33 +236,39 @@
 
     </div>
     <div id="Contact_us" onclick="submit">
+        
         <a href="#Contact_us"><h3>Contact Us</h3></a>
 
-        <form id="contactForm" >
-            <div class="detail ">
-                <label for="name">Name</label> 
-               <input id="name" type="text" name="Person_name" > 
-              <div class="error"></div>    
-        </div>
-            <div class="detail">
-            <label for="email">Email</label> 
-            <input id="email" type="text"> 
-            <div class="error"></div> 
-        </div>
-            <div class="detail">
-            <label for="ph" >Phone No</label> 
-            <input id="ph" type="number"  >
-        </div>
-        <div class="error"></div> 
-            <div class="detail">
-            <label for="msg">Message</label> 
-            <textarea id="msg" name="" cols="25" rows="6" placeholder="Type your message.."> </textarea> 
-        </div> 
-        <div class="error"></div> 
-            <div class="detail">
+        <form id="contactForm" onsubmit="return validateForm()">
+          <div class="detail">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="Person_name">
+            <div class="error" id="nameError"></div>
+          </div>
+          <div class="detail">
+            <label for="email">Email</label>
+            <input id="email" type="text">
+            <div class="error" id="emailError"></div>
+          </div>
+          <div class="detail">
+            <label for="ph">Phone No</label>
+            <input id="ph" type="tel">
+            <div class="error" id="phoneError"></div>
+          </div>
+          <div class="detail">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="" cols="25" rows="6" placeholder="Type your message.."></textarea>
+            <div class="error"></div>
+          </div>
+      
+          <div class="detail">
             <button id="submit" type="submit">Submit</button>
-        </div>
-       
+          </div>
+      
+        </form>
+      
+        <p id="thankYouMessage" style="display: none;">Thank you..</p>
+      
         </form>
         
     </div>

@@ -1,6 +1,7 @@
 body {
     background: #fcf1f1bb;
     font-family: Open Sans;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -97,11 +98,15 @@ header {
 
 
 #Biography p {
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    display: block;
+    text-size-adjust;
     font-size: 17px;
     line-height: 28px;
     text-indent: 35px;
     padding-top: -13px;
+    justify-content: center;
 }
 
 #Biography h4 {
@@ -115,7 +120,18 @@ header {
     margin-left: 15px;
     color: rgba(146, 7, 26, 0.6);
 }
+#scrollToTopBtn{
 
+    height: 40px;
+    width: fit-content;
+    font-size: 30px;
+    font-weight: bold;
+    padding: auto;
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    box-shadow: none;
+}
 #Gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -237,7 +253,7 @@ footer a:hover {
 }
 /* styling the form */
 form{
-    height:480px;
+    height:520px;
     max-width: 350px;
     border-radius: 3px;
     background-color:#cde4d898;
@@ -282,20 +298,22 @@ button:hover{
 }
 #thankYouMessage {
     display: none;
-    color: #4caf50;
+    color: #f59a11;
     font-weight: bold;
+    font-size: 24px;
+    padding-left: 45%;
     margin-top: 12px;
   }
 
 /* display the error message */
-.detail.error{
+.error{
     color: red;
     padding: 3px;
     font-size: 17px;
     text-indent: 15px;
 }
 
-.detail.success input{
+.success input{
     color: green;
 }
 .detail.error input{

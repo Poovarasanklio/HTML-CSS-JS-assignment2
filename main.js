@@ -1,77 +1,58 @@
 // declaring the var and geting id by query selector
 const form = document.querySelector("#contactForm");
-const nameJ = document.querySelector("#name");
-const email = document.querySelector("#email");
-const phNumber = document.getElementById("ph"); 
-const message = document.getElementById("msg"); 
-const Thanksmsg = document.getElementById("alert");
-// validate the each element by passing id's
-form.addEventListener('submit', (e) => {
-    if (!validating()) {
-        e.preventDefault();
-    } else {
-        e.preventDefault();
-        Thanksmsg.innerText = "Thank you !";
-    }
+const Thanksmsg = document.getElementById("thankYouMessage");
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  if (validating()) {
+    Thanksmsg.style.display = "block";
+    form.style.display = "none";
+  }
 });
-
+// validate the each element by passing id's
 function validating() {
-    const nameV = nameJ.value.trim();
-    const mailV = email.value.trim();  //trim the value for exact data
-    const phNumberV = phNumber.value.trim();
-    const messageV = message.value.trim();
-    let dum = true;
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const phNumber = document.getElementById("ph");
 
-    if (nameV === '') {
-        dum = false;
-        setError(nameJ, "Name is required");
-        Thanksmsg.innerText = '';
-    } else {
-        setSuccess(nameJ);
-    }
+  const nameRegex = /^[a-zA-Z\s]+$/;
+  const emailRegex = /^\S+@\S+\.\S+$/;
+  const phoneRegex = /^\d{10}$/;
 
-    if (mailV === '') {
-        dum = false;
-        setError(email, "Email is required");
-    } else if (!validateEmail(mailV)) {
-        dum = false;
-        setError(email, "Entered Email not Valid");
-        Thanksmsg.innerText = '';
-    } else {
-        setSuccess(email);
-    }
+  let dum = true;
 
-    if (phNumberV.length !== 10) {
-        dum = false;
-        setError(phNumber, 'Invalid Phone Number');
-        Thanksmsg.innerText = '';
-    } else {
-        setSuccess(phNumber);
-    }
-    dum = true;
-    return dum;
+  if (!nameRegex.test(name.value)) {
+    setError(name, "Enter a valid name");
+    dum = false;
+  } else {
+    setSuccess(name);
+  }
+//creaating function for validate email id
+  if (!emailRegex.test(email.value)) {
+    setError(email, "Enter a valid email address");
+    dum = false;
+  } else {
+    setSuccess(email);
+  }
+
+  if (!phoneRegex.test(phNumber.value)) {
+    setError(phNumber, "Enter a valid 10-digit phone number");
+    dum = false;
+  } else {
+    setSuccess(phNumber);
+  }
+
+  return dum;
 }
 
 function setError(element, message) {
-    const details = element.parentElement;
-    const errorElement = details.querySelector('.error');
-
-    errorElement.innerText = message;
-    details.classList.add('error');
-    details.classList.remove('success');
+  const errorElement = element.nextElementSibling;
+  errorElement.innerText = message;
+  element.style.borderColor = "red";
 }
 //creating function for successed procced to next step
 function setSuccess(element) {
-    const details = element.parentElement;
-    const errorElement = details.querySelector('.error');
-
-    errorElement.innerText = '';
-    details.classList.remove('error');
-    details.classList.add('success');
+  const errorElement = element.nextElementSibling;
+  errorElement.innerText = "";
+  element.style.borderColor = "";
 }
-//creaating function for validate email id
-const validateEmail = (email) => {
-    return String(email)
-        .toLowerCase()
-        .match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
-};

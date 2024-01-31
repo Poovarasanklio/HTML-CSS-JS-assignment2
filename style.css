@@ -1,0 +1,303 @@
+body {
+    background: #fcf1f1bb;
+    font-family: Open Sans;
+}
+
+header {
+    border: 1px solid yellow;
+    width: auto;
+    height: 350px;
+    position: relative;
+    background: #e1faa7d2;
+}
+
+.person-name {
+    color: rgba(47, 95, 3, 0.815);
+}
+
+.person-name {
+    color: rgb(207, 41, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    font-size: 17.2px;
+    font-weight: 550;
+    color: rgb(97, 60, 60);
+}
+
+.title-img {
+    position: absolute;
+    top: 20px;
+    right: 0;
+
+}
+
+#title-img {
+    border-radius: 2%;
+
+}
+
+.head-a {
+    /* border: 2px solid white; */
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(57, 37, 235);
+    opacity: .9;
+}
+
+.head-a:hover {
+    padding: 5px 10px 5px 5px;
+    background: rgb(247, 242, 242);
+    border-radius: 9px;
+    color: rgb(236, 7, 7);
+    width:40px;
+}
+
+#Biography a {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgba(47, 95, 3, 0.815);
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 140px 180px 120px 120px 150px;
+    justify-content: center;
+    margin-left: 10;
+    padding-left: 24px;
+    padding-right: 20px;
+}
+
+.head-container {
+    margin-top: 200px;
+}
+
+.bio {
+    font-size: 17px;
+    margin: auto 55% auto 70px;
+    line-height: 27px;
+    transition: 1s;
+}
+
+.bio:hover {
+
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 19.5px;
+    margin-right: 55%;
+    justify-content: center;
+    align-items: center;
+    line-height: 34px;
+    transform: transformX(45);
+    background-color: rgba(12, 3, 3, 0.644);
+}
+
+
+#Biography p {
+    padding-left: 10px;
+    font-size: 17px;
+    line-height: 28px;
+    text-indent: 35px;
+    padding-top: -13px;
+}
+
+#Biography h4 {
+    font-size: 25px;
+    margin-left: 15px;
+    color: rgba(146, 7, 26, 0.8);
+}
+
+#Biography h5 {
+    font-size: 19px;
+    margin-left: 15px;
+    color: rgba(146, 7, 26, 0.6);
+}
+
+#Gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+}
+
+#Gallery a {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgba(47, 95, 3, 0.815);
+}
+
+.imagesize {
+    cursor: pointer;
+    width: 450px;
+    min-width: 100px;
+    max-height: 300px;
+    min-height: 400px;
+    border-radius: 50px;
+    transition: 2s;
+}
+
+.imagesize:nth-child(odd) {
+    margin-left: 90px;
+}
+
+figcaption {
+    font-weight: 600;
+    text-align: center;
+    font-family: Arial;
+    text-indent: 30px;
+}
+
+.imagesize:hover {
+
+    transform: scale(1.25);
+
+}
+
+ul {
+    font-size: 19px;
+
+}
+
+#Achieve {
+    padding-bottom: 40px;
+}
+
+#Achieve li {
+    list-style: circle;
+    margin-left: 50px;
+    text-indent: 5px;
+    line-height: 38px;
+}
+
+.Achieve-link {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgba(47, 95, 3, 0.815);
+
+}
+#Quotes {
+    padding-top: 0px;
+
+}
+.Quotes-a {
+    color: rgba(47, 95, 3, 0.815);
+    text-decoration: none;
+    font-size: 30px;
+}
+.Quotes-para {
+
+    margin-left: 50px;
+    padding-right: 25px;
+    line-height: 45px;
+}
+
+.Quotes-para p q {
+    font-weight: 550;
+    line-height: 25px;
+
+}
+
+.Quotes-para p span {
+    font-size: 17px;
+}
+
+.Quotes-para li {
+
+    list-style: square;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  50px auto;
+}
+
+footer a {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgba(47, 95, 3, 0.815);
+    cursor: pointer;
+}
+footer a:hover {
+    background: rgba(47, 95, 3, 0.815);
+    color: yellow;
+    padding: 3px 3px;
+    border-radius: 5px;
+}
+/* //adding the new feature and give style for it contact us */
+#Contact_us a {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgba(47, 95, 3, 0.815);
+}
+/* styling the form */
+form{
+    height:480px;
+    max-width: 350px;
+    border-radius: 3px;
+    background-color:#cde4d898;
+    margin-left: 37%;
+    padding: 25px;
+}
+.detail{
+       display: flex;
+      flex-direction: column;
+     margin-bottom: 20px;
+}
+#Contact_us form label{
+    font-size: 14.2px;
+    line-height: 25px;
+}
+#Contact_us form input,textarea{
+    font-family: monospace;
+    margin-bottom: 5px;
+    border: 0px;
+    border-radius: 6px;
+    min-width: 200px;
+    min-height: 25px;
+    text-indent: 8px;
+    padding: 5px;
+}
+#Contact_us form input,textarea:focus{
+   outline: none;
+    
+}
+button{
+    margin: 8px auto auto 37%  ;
+    font-family: monospace;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    color: rgb(253, 251, 251);
+    background-color:rgba(20, 22, 19, 0.815);
+
+}
+button:hover{
+    box-shadow: 4px 4px rgba(50, 56, 63, 0.623);
+    cursor: pointer;
+}
+#thankYouMessage {
+    display: none;
+    color: #4caf50;
+    font-weight: bold;
+    margin-top: 12px;
+  }
+
+/* display the error message */
+.detail.error{
+    color: red;
+    padding: 3px;
+    font-size: 17px;
+    text-indent: 15px;
+}
+
+.detail.success input{
+    color: green;
+}
+.detail.error input{
+    color: red;
+}

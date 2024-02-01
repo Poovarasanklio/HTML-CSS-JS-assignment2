@@ -6,7 +6,7 @@ form.addEventListener('submit', function (e) {
   e.preventDefault();
   if (validating()) {
     Thanksmsg.style.display = "block";
-    form.style.display = "none";
+    // form.style.display = "block";
   }
 });
 // validate the each element by passing id's

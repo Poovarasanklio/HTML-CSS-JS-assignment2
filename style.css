@@ -1,7 +1,9 @@
+*{
+    scroll-behavior: smooth;
+}
 body {
     background: #fcf1f1bb;
     font-family: Open Sans;
-    scroll-behavior: smooth;
 }
 
 header {
@@ -301,8 +303,7 @@ button:hover{
     color: #f59a11;
     font-weight: bold;
     font-size: 24px;
-    padding-left: 45%;
-    margin-top: 12px;
+    margin: 12px auto;
   }
 
 /* display the error message */

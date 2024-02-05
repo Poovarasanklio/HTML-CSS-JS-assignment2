@@ -32,7 +32,7 @@ header{
 .butt {
      display: flex; 
 }
-/* fixing anv bar buttons */
+/* fixing any bar buttons */
 .butt a{
     border: 2px solid rgb(22, 17, 17); 
     margin-left: 12px;
@@ -59,7 +59,7 @@ header{
     flex: 1;
 }
 .image-content p{
-    padding: 2px 20px;
+    padding: 2px 25px;
     font-size: 14px;
     font-family: 'Lucida Sans Unicode';
 }
@@ -72,6 +72,9 @@ header{
     justify-content: center;
     padding: 5px;
     font-size: 14px;
+}
+.image-content div{
+    margin-top:auto;
 }
 /* last image content should greater in size than other content */
 .image-content:nth-child(3){

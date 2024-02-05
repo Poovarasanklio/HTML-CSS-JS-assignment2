@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Lucida Sans Unicode';
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    background-color:#d4af06;
+    justify-content: center;
+}
+.heading a{
+    color:#fff;
+    display: flex;
+    justify-content:center ;
+}
+.heading1 a{
+    display: none;
+}
+.nav-container{
+    display: flex; 
+    background-color: #a9a9a9ab;
+    
+}
+.button-list
+{  display: flex;  
+    /* margin-left: -38px; */
+    width: fit-content;
+    padding: 1px;
+}
+.butt {
+    display: flex; 
+    justify-content: flex-start;
+    
+}
+.butt a{
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(12, 11, 11); 
+    padding: .5vw 7vw; 
+    margin-left: 10px;
+    background-color: #fff;
+    color: orange;
+}
+
+.image-container{
+    background-color: gray;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.image-content{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 20px;
+    margin-left:  10px;
+    padding: 9px;
+    max-width: 411px;
+}
+.image-content p{
+    padding: 2px 17px;
+    font-size: 14px;
+}
+
+.image-content a{
+    border:1px solid black;
+    background-color:whitesmoke;
+    color: rgb(15, 10, 10);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-size: 14px;
+}
+ 
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #d4af06;
+    color:#fff;
+
+}
+
+@media (max-width:505px){
+   
+    .image-container{
+        margin-top: -110px;
+        
+    }
+    .image-container img{
+        width:90;
+    }
+    .heading{
+        display: none;
+    }
+    .heading1 a{
+            color:#fff;
+            display: flex;
+            justify-content:center;
+            font-size: 25px;
+        }
+        .image-container{
+            display: flex;
+            justify-content:center;
+            flex-direction:row;
+            max-width: 100%;
+        }
+    .media-container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 110px;
+        justify-content: center;
+    }
+    .butt a{
+        
+        padding:5px 15px; 
+    }
+    
+}

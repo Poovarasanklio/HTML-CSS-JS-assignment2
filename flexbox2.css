@@ -1,0 +1,91 @@
+/* basic padding and margin */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Lucida Sans Unicode';
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    background-color:#d4af06;
+    justify-content: center;
+}
+.heading a{
+    color:#fff;
+    display: flex;
+    justify-content:center ;
+}
+.nav-container{
+    width: 100%;
+    display: flex; 
+    background-color: #a9a9a9ab;
+    justify-content: flex-start;
+}
+.button-list
+{  display: flex; 
+   margin-left: -40px;
+}
+.butt {
+     display: flex; 
+}
+/* fixing anv bar buttons */
+.butt a{
+    border: 2px solid rgb(22, 17, 17); 
+    margin-left: 12px;
+    padding:.5vw 7vw; 
+    background-color: #fff;
+    color: orange;
+}
+.image-container{
+    width: 99%;
+    background-color: gray;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 7px;
+}
+/* making inside the image container allocating width and background  */
+.image-content{
+    width: .5%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 5px 10px;
+    padding: 9px;
+    flex: 1;
+}
+.image-content p{
+    padding: 2px 20px;
+    font-size: 14px;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.image-content a{
+    border:1px solid black;
+    background-color:whitesmoke;
+    color: rgb(15, 10, 10);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-size: 14px;
+}
+/* last image content should greater in size than other content */
+.image-content:nth-child(3){
+    flex: 2;
+}
+/* Giving black box before the footer */
+.black-line{
+    height: 9px;
+    background-color: black;
+    width: auto;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #d4af06;
+    color:#fff;
+}

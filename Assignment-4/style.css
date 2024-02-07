@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* here to set the container section how to display */
+.container {
+    background-color: #141414;
+    height: 75vh;
+    width: 60%;
+    margin: 6% 20%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 9px .1px rgb(36, 12, 12, .4);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    color: rgb(243, 239, 8);
+    font-size: 40px;
+    font-weight: 700;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.main p {
+    display: flex;
+    justify-content: center;
+    margin: 7% 7%;
+    height: max-content;
+    line-height: 30px;
+    width: 80%;
+    font-size: 17px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 450;
+    color: white;
+}
+/* all the buttom should follow the same format  */
+button {
+    outline: none;
+    width: 20%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+/* Add this style to hide the quiz section by default */
+.quiz {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 80vh;
+    display: none;
+}
+
+.quiz active{
+    display: block;
+  
+}
+/* Styles at top left corner to display the question no */
+.quiz #CuQuesno {
+    margin: 20px;
+    font-weight: 350;
+    color: aliceblue;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+}
+/*  Styles for mid of the container to display the feedback */
+#feedback{
+    margin: 1% 7%;
+    height: 40px;
+    line-height: 25px;
+    width: 80%;
+    text-align: center;
+    text-transform:Camw;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 450;
+    color: rgb(233, 227, 227);
+    word-spacing: 5px;
+}
+.quiz #scorecount {
+    margin: 20px;
+    font-weight: 350;
+    color: aliceblue;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+}
+#quizheader{
+    display:flex ;
+    justify-content: space-between;
+}
+/* giving style for question to display */
+#question_list {
+    margin: 2% 7%;
+    height: 40px;
+    line-height: 25px;
+    width: 50vw;
+    font-size: 21px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 450;
+    color: rgb(10, 232, 248);
+    word-spacing: 5px;
+}
+/* giving style for answerlist to display */
+#answer_list {
+    max-width: 90%;
+    margin-left:9%;
+    margin-top: 2.8%;
+    margin-bottom: 0px;
+    line-height: 40px;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 450;
+    color: aliceblue;
+}
+
+#answer_list label input {
+    display: none;
+}
+/* after choose the right option */
+#answer_list label {
+    dispLay: block;
+}
+span{
+    cursor: pointer;
+
+}
+#answer_list label span {
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 10px;
+}
+.correct{
+    color: yellow;
+    font-size: 18px;
+    transition: font-size 1s;
+}
+.incorrect{
+    color: #ff290d;
+    font-size: 13px;
+    transition: font-size 1s;
+}
+/* next button to display end of the container */
+#next {
+    font-weight: 600;
+    min-width: 80px;
+    margin-top: 0;
+    margin-left: 40%;
+    box-shadow: 0 1px 3px 0 rgba(248, 247, 247, 0.849);
+}

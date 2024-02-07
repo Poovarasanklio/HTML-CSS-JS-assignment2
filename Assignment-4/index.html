@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">  <!-- This div show the whole content of the quiz application -->
+        <div class="main" >  <!-- This div will appear before the quiz start  -->
+            <h2 class="heading">C. N. Annadurai Quiz</h2>
+            <p>In this quiz,an examinee will have an question about one of the most popular political leader.
+                To test your knowledge of the legendary C. N. Annadurai.
+                Uncover facts, unravel history.Click, Let's Go
+            </p>
+            <button class="Start">Let's Go</button>
+        </div>
+        <div class="quiz">  <!-- This div will appear after the quiz start  -->
+            <div id="quizheader">
+            <p id="CuQuesno">Question no;</p>
+            <p id="scorecount"></p></div>
+            <h2 id="question_list"> Question </h2>
+            <div id="answer_list">
+                
+               <label>
+                    <span  class="btn"></span>
+                </label>
+                <label>
+                    <span  class="btn"></span>
+                </label>
+                <label>
+                    <span  class="btn"></span>
+                </label>
+                <label>
+                    <span  class="btn"></span>
+                </label>
+                </div>
+                <p id="feedback"></p>  <!-- This p tag will appear end of the quiz for display feedback for examinee  -->
+                <button id="next" type="submit"></button>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+</body>
+
+</html>

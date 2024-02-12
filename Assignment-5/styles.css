@@ -1,0 +1,236 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+.mastergrid{
+    display: grid;
+    grid-template-columns:17% 83% ;
+    grid-template-rows: auto;
+}
+.navigation {
+    background-color: #018fd6;
+    padding-left: 22%;
+    padding-top:9%;
+    font-weight: 600;
+    display:flex;
+}
+.navigation img{
+    width:20px;
+    height: 20px;
+}
+
+.navigation .dash{
+    padding-top: 4px;
+    font-size: 20px;
+}
+#dash img{
+    margin-left: 0px;
+    width: 30px;
+    height: 30px;
+    filter:invert(1);
+}
+#list1 img,#list2 img{
+    width: 20px;
+    height: 20px;
+    filter:invert(1);
+} 
+#acc img{
+    border: 1px solid black;
+}
+#list1,#list2{
+    margin-top: 21px;
+    line-height: 40px;
+    font-size: 17px;
+}
+#list4{
+    margin-top: 20px;
+    line-height: 40px;
+    font-size: 17px;
+}
+#list3{
+    margin-top: 24px;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.head-firstline
+{ 
+    margin-top: 1.5%;;
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: .10fr 1.7fr 1fr ;
+}
+.head-firstline #userid{
+    margin-top: -5px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 30px;
+}
+.head-firstline img{
+    margin-top: 3px;
+    height: 18px;
+    width: 18px;
+}
+.head-firstline > div{ /* to select the first div inside the .head-firstline  */
+    display: grid;
+    grid-template-columns: .10fr .10fr .90fr ;
+    margin-left: 20%;
+    font-size: 13px;
+    font-weight: 600;
+}
+.head-firstline input{
+    border-radius:12px;
+    border: none;
+    height: 22px;
+    background-color: lavender;
+}
+.head-firstline input:active{
+    border:none;
+}
+.head-firstlineusn{
+    margin: 3px;
+    margin-left: 15px;
+}
+
+.head-secondline{
+    margin-top: 5px;
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid black; */
+  
+}
+.head-secondline .user-name{
+    padding: 20px;
+    font-size: 12px;
+    font-weight: 650;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15px 5px;
+}
+.user-name p:nth-of-type(2){
+    font-size: 17px;
+}
+.head-secondline img{
+    margin-top: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(247, 237, 231);
+}
+.head-secondline > div{
+    display: flex;
+}
+.head-secondline .user-detail{
+    margin-left:5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-detail a{
+    background-color: #018fd6;
+    padding:10px 20px;
+    border-radius:25px;
+    font-size: 14px;
+    font-weight: 550;
+}
+.main-content{
+    /* border: 2px solid green; */
+    background-color: lavender;
+    margin-top: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr ;
+    gap: 10px;
+}
+.box{
+    background-color: white;
+    width:26vw;
+    height: 10.55em;
+    border-radius:9px ;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: .02fr 1fr;
+    position: relative;
+}
+.box p{
+    font-size: 12.5px;
+    color: gray;
+}
+.box img{
+    width:20px;
+    margin-left: 1em;
+}
+.box >div >div{ /* to select the second div inside the class box div  */
+    position: absolute;
+    right: 15px;
+    bottom:15px;
+    /* border : 2px solid black; */
+}
+.margincolor{
+    margin:-15px;
+    overflow: hidden;   
+    background-color: orange;
+    height: 10.55em;
+    width: 4.8px;
+    
+}
+.box2{
+    /* border: 1px solid blue; */
+    width:22vw;
+    height: 15.05em;
+    background-color: white;
+    border-radius:9px ;
+    padding: 20px;
+}
+.box2 p{
+    font-size: 9.5px;
+    color: gray;
+}
+.line{
+    margin:15px auto;
+    border-bottom: .1px solid rgba(128, 128, 128, 0.637);
+}
+#trend
+{
+    padding: 2px;
+    padding-left: 20px;
+}
+.box2 img{
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 35px;
+}
+
+.usname{
+    margin-top: 14px;
+    display: flex;
+    font-size: 17px;
+}
+.usname > div{
+    /* border:2px solid black; */
+    padding: 10px;
+}
+.content-container-1{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr  ;
+    gap: 10px;
+}
+.content-container-2{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-template-rows: 1fr 1fr;
+}
+h4{
+    /* border:2px solid black; */
+    margin-bottom: 5px;}
